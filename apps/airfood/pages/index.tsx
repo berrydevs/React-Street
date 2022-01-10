@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Header from '../components/header/header';
 
 const StyledPage = styled.div`
   .page {
@@ -7,6 +8,7 @@ const StyledPage = styled.div`
 
 export function Index() {
   return (
+    <Header></Header>
   );
 }
 
