@@ -16,12 +16,14 @@ export function Hero(props: HeroProps) {
       <Image
         key={index}
         alt="Customer Photo"
-        src={`/static/img/customers-${name}`}
-        width={48}
-        height={48}
+        src={`/static/img/customers/customer-${name}.jpg`}
+        width={38}
+        height={38}
       />
     );
   });
+
+  console.log('🚀 ~ file: hero.tsx ~ line 73 ~ Hero ~ images', images);
 
   return (
     <Wrapper>
@@ -76,20 +78,22 @@ const DeliveredText = styled.div`
   font-weight: 600;
 
   span {
-    color: #cf711f
-    font-weight:700;
+    color: #cf711f;
+    font-weight: 700;
   }
 `;
 
 const DeliveredMealsImages = styled.div`
-  height: 4.8rem;
-  width: 4.8rem;
-  border-radius: 50%;
-  margin-right: -1.6rem;
-  border: 3px solid #fdf239;
+  img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border: 3px solid #fdf239;
+    border-radius: 50%;
+    margin-right: -1.6rem;
 
-  &:last-child {
-    margin: 0;
+    &:last-child {
+      margin: 0;
+    }
   }
 `;
 

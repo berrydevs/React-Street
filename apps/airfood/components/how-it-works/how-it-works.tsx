@@ -1,11 +1,11 @@
-import './how-it-works.module.scss';
+import styles from './how-it-works.module.scss';
 import Image from 'next/image';
 /* eslint-disable-next-line */
 export interface HowItWorksProps {}
 
 export function HowItWorks(props: HowItWorksProps) {
   return (
-    <section className="section-how">
+    <section className={styles.sectionHow}>
       <div className="container">
         <span className="subheading">How it works</span>
         <h2 className="heading-secondary">
@@ -13,15 +13,15 @@ export function HowItWorks(props: HowItWorksProps) {
         </h2>
       </div>
 
-      <div className="container grid grid--2-cols">
+      <div className="container grid grid--2-cols grid--center-v">
         {/* Step 1 */}
-        <div className="step-text-box">
-          <p className="step-numer">01</p>
+        <div className={styles.stepTextBox}>
+          <p className={styles.stepNumber}>01</p>
           <h3 className="heading-tertiary">
             Tell us what you like (and what not)
           </h3>
 
-          <p className="step-description">
+          <p className={styles.stepDescription}>
             Never again waste time thinking about what to eat! Omnifood AI will
             create a 100% personalized weekly meal plan just for you. It makes
             sure you get all the nutrients and vitamins you need, no matter what
@@ -29,32 +29,32 @@ export function HowItWorks(props: HowItWorksProps) {
           </p>
         </div>
 
-        <div className="step-img-box">
+        <div className={styles.stepImgBox}>
           <Image
             src={'/static/img/app/app-screen-1.png'}
             className="logo"
             alt="iPhone app preferences selection screen"
-            width={150}
-            height={23}
+            width={250}
+            height={523}
           />
         </div>
 
         {/* Step 2 */}
-        <div className="step-img-box">
+        <div className={styles.stepImgBox}>
           <Image
             src={'/static/img/app/app-screen-2.png'}
             className="logo"
             alt="iPhone app meal approving plan screen"
-            width={150}
-            height={23}
+            width={250}
+            height={523}
           />
         </div>
 
-        <div className="step-text-box">
-          <p className="step-numer">02</p>
+        <div className={styles.stepTextBox}>
+          <p className={styles.stepNumber}>02</p>
           <h3 className="heading-tertiary">Approve your weekly meal plan</h3>
 
-          <p className="step-description">
+          <p className={styles.stepDescription}>
             Once per week, approve the meal plan generated for you by Omnifood
             AI. You can change ingredients, swap entire meals, or even add your
             own recipes.
@@ -62,24 +62,24 @@ export function HowItWorks(props: HowItWorksProps) {
         </div>
 
         {/* Step 3 */}
-        <div className="step-text-box">
-          <p className="step-numer">03</p>
+        <div className={styles.stepTextBox}>
+          <p className={styles.stepNumber}>03</p>
           <h3 className="heading-tertiary">Receive meals at convenient time</h3>
 
-          <p className="step-description">
+          <p className={styles.stepDescription}>
             Best chefs in town will cook your selected meal every day, and we
             will deliver it to your door whenever works best for you. You can
             change delivery schedule and address daily!
           </p>
         </div>
 
-        <div className="step-img-box">
+        <div className={styles.stepImgBox}>
           <Image
             src={'/static/img/app/app-screen-3.png'}
             className="logo"
             alt="iPhone app delivery screen"
-            width={150}
-            height={23}
+            width={250}
+            height={523}
           />
         </div>
       </div>
