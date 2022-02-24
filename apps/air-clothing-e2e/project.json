@@ -1,0 +1,28 @@
+{
+  "root": "apps/air-clothing-e2e",
+  "sourceRoot": "apps/air-clothing-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/air-clothing-e2e/cypress.json",
+        "devServerTarget": "air-clothing:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "air-clothing:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/air-clothing-e2e/**/*.js"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["air-clothing"]
+}
