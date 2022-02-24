@@ -1,0 +1,25 @@
+.sectionMeals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  width: 100%;
+}
+
+.mealTitle {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.mealAttributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mealAttribute {
+  font-size: 1.8rem;
+}
