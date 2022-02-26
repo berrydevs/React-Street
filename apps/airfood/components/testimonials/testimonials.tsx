@@ -1,3 +1,4 @@
+import Gallery from '../gallery/gallery';
 import TestimonialCard from '../testimonial-card/testimonial-card';
 import styles from './testimonials.module.scss';
 
@@ -6,8 +7,8 @@ export interface TestimonialsProps {}
 
 export function Testimonials(props: TestimonialsProps) {
   return (
-    <section className={`grid grid--2-cols ${styles.sectionTestimonials}`}>
-      <div className="testimonialContainer">
+    <section className={`${styles.sectionTestimonials}`}>
+      <div className={styles.testimonialContainer}>
         <span className="subheading">Meals</span>
         <h2 className="heading-secondary">
           Omnifood AI chooses from 5,000+ recipes
@@ -40,7 +41,7 @@ export function Testimonials(props: TestimonialsProps) {
         </div>
       </div>
 
-      <div className={styles.gallery}>Gallery</div>
+      <Gallery />
     </section>
   );
 }
