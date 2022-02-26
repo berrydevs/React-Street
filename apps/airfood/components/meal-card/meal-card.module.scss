@@ -1,0 +1,76 @@
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.5rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.09);
+}
+
+.mealImage {
+  position: relative;
+  height: 23rem;
+}
+
+.mealTags {
+  margin-bottom: 1.2rem;
+}
+
+.mealContent {
+  top: 0;
+  position: relative;
+  padding: 3.2rem 4.8rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+.tagVegetarian {
+  background-color: #51cf65;
+}
+
+.tagVegan {
+  background-color: #94d82d;
+}
+
+.tagPaleo {
+  background-color: #ffd43b;
+}
+
+.mealTitle {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.mealAttributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mealAttribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.mealIcon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67322;
+}

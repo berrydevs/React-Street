@@ -23,8 +23,6 @@ export function Hero(props: HeroProps) {
     );
   });
 
-  console.log('🚀 ~ file: hero.tsx ~ line 73 ~ Hero ~ images', images);
-
   return (
     <Wrapper>
       <HeroStyle>

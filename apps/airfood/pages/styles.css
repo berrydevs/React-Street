@@ -20,6 +20,10 @@ body {
   color: #555;
 }
 
+body strong {
+  font-weight: 500;
+}
+
 .grid {
   display: grid;
   column-gap: 6.3rem;
@@ -81,4 +85,25 @@ body {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.link:link, .link:visited {
+  color: #e67322;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.5s;
+}
+
+.link:hover, link:active {
+  border-bottom: 1px solid transparent;
+  color: #cf711f;
 }
