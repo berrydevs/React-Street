@@ -6,6 +6,7 @@ import HowItWorks from '../components/how-it-works/how-it-works';
 import Navbar from '../components/navbar/navbar';
 import Script from 'next/script';
 import Meals from '../components/meals/meals';
+import Testimonials from '../components/testimonials/testimonials';
 const StyledPage = styled.div`
   .page {
   }
@@ -20,6 +21,7 @@ export function Index() {
       <FeaturedIn></FeaturedIn>
       <HowItWorks></HowItWorks>
       <Meals></Meals>
+      <Testimonials></Testimonials>
     </>
   );
 }

@@ -1,0 +1,19 @@
+.testimonialImage {
+  position: relative;
+  span > img {
+    width: 6.4rem;
+    border-radius: 80%;
+  }
+  margin-bottom: 1.2rem;
+}
+
+.content {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.name {
+  font-size: 1.6rem;
+  color: #777;
+}

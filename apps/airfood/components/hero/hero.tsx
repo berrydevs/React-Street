@@ -28,8 +28,7 @@ export function Hero(props: HeroProps) {
       <HeroStyle>
         <TextContainer>
           <Heading>
-            <h1 className="text-3xl font-bold underline">Hello world!</h1>A
-            healthy meal delivered to your door, every single day
+            A healthy meal delivered to your door, every single day
           </Heading>
           <Description>
             The smart 365-days-per-year food subscription that will make you eat
