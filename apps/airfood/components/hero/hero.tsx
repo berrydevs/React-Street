@@ -35,12 +35,14 @@ export function Hero(props: HeroProps) {
             healthy again. Tailored to your personal tastes and nutritional
             needs. We have delivered 250,000+ meals last year!
           </Description>
-          {/* <Link href="/" passHref>
+
+          <Link href="/" passHref>
             <PrimaryButton>Lets Eat Well!</PrimaryButton>
           </Link>
+
           <Link href="/" passHref>
             <OutlineButton>Learn more</OutlineButton>
-          </Link> */}
+          </Link>
           {/* <Link href="/" passHref>
             <ButtonStyles primary marginRightSm>
               Lets Eat Well!
@@ -146,7 +148,7 @@ const ButtonStyles = css<{ primary: boolean; marginRightSm: boolean }>`
     transition: all 0.3s;
   }
 
-  &:link,
+  /* &:link,
   &:visited {
     background-color: ${(p) => (p.primary ? '#e67e22' : '#fff')};
     color: ${(p) => (p.primary ? '#fff' : '#555')};
@@ -156,7 +158,7 @@ const ButtonStyles = css<{ primary: boolean; marginRightSm: boolean }>`
     background-color: ${(p) => (p.primary ? '#cf711f' : '#fdf2e9')};
     box-shadow: ${(p) => (p.primary ? '' : 'inset 0 0 0 #fff')};
   }
-  margin-right: ${(p) => (p.marginRightSm ? '1.6rem' : '0')};
+  margin-right: ${(p) => (p.marginRightSm ? '1.6rem' : '0')}; */
 `;
 
 const PrimaryButton = styled.a`
@@ -184,6 +186,7 @@ const OutlineButton = styled.a`
   &:active {
     background-color: #fdf2e9;
     box-shadow: inset 0 0 0 #fff;
+    box-shadow: inset 0 0 1 #fff;
   }
 `;
 
