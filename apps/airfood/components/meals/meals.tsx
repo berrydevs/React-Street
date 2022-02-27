@@ -2,9 +2,20 @@ import styles from './meals.module.scss';
 import Image from 'next/image';
 import MealCard from '../meal-card/meal-card';
 import Link from 'next/link';
+import List from '../list/list';
 /* eslint-disable-next-line */
 export interface MealsProps {}
-
+const mealList = [
+  'Vegetarian',
+  'Vegan',
+  'Pescatarian',
+  'Gluten-free',
+  'Lactose-free',
+  'Keto',
+  'Paleo',
+  'Low FODMAP',
+  'Kid-friendly',
+];
 export function Meals(props: MealsProps) {
   return (
     <section className={styles.sectionMeals}>
@@ -36,63 +47,8 @@ export function Meals(props: MealsProps) {
         />
 
         <div className="diets">
-          <ul className={styles.list}>
-            <h3 className="heading-tertiary">Works with any diet</h3>
-            <li className={styles.listItem}>
-              <span className={styles.listIcon}>
-                <ion-icon name="checkmark-outline"></ion-icon>
-              </span>
-              <span>Vegetarian</span>
-            </li>
-            <li className={styles.listItem}>
-              <span className={styles.listIcon}>
-                <ion-icon name="checkmark-outline"></ion-icon>
-              </span>
-              <span>Vegan</span>
-            </li>
-            <li className={styles.listItem}>
-              <span className={styles.listIcon}>
-                <ion-icon name="checkmark-outline"></ion-icon>
-              </span>
-              <span>Pescatarian</span>
-            </li>
-            <li className={styles.listItem}>
-              <span className={styles.listIcon}>
-                <ion-icon name="checkmark-outline"></ion-icon>
-              </span>
-              <span>Gluten-free</span>
-            </li>
-            <li className={styles.listItem}>
-              <span className={styles.listIcon}>
-                <ion-icon name="checkmark-outline"></ion-icon>
-              </span>
-              <span>Lactose-free</span>
-            </li>
-            <li className={styles.listItem}>
-              <span className={styles.listIcon}>
-                <ion-icon name="checkmark-outline"></ion-icon>
-              </span>
-              <span>Keto</span>
-            </li>
-            <li className={styles.listItem}>
-              <span className={styles.listIcon}>
-                <ion-icon name="checkmark-outline"></ion-icon>
-              </span>
-              <span>Paleo</span>
-            </li>
-            <li className={styles.listItem}>
-              <span className={styles.listIcon}>
-                <ion-icon name="checkmark-outline"></ion-icon>
-              </span>
-              <span>Low FODMAP</span>
-            </li>
-            <li className={styles.listItem}>
-              <span className={styles.listIcon}>
-                <ion-icon name="checkmark-outline"></ion-icon>
-              </span>
-              <span>Kid-friendly</span>
-            </li>
-          </ul>
+          <h3 className="heading-tertiary">Works with any diet</h3>
+          <List list={mealList} />
         </div>
       </div>
 
