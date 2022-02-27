@@ -28,6 +28,11 @@ body strong {
   display: grid;
   column-gap: 6.3rem;
   row-gap: 9.6rem;
+
+}
+
+grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {

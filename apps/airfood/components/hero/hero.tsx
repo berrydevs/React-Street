@@ -161,7 +161,7 @@ const ButtonStyles = css<{ primary: boolean; marginRightSm: boolean }>`
   margin-right: ${(p) => (p.marginRightSm ? '1.6rem' : '0')}; */
 `;
 
-const PrimaryButton = styled.a`
+export const PrimaryButton = styled.a`
   ${ButtonStyles}
   &:link,
   &:visited {
