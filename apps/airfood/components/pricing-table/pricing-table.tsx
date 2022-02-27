@@ -31,7 +31,7 @@ export function PricingTable(props: PricingTableProps) {
         </h2>
       </div>
 
-      <div className="container grid grid--2-cols">
+      <div className="container grid grid--2-cols margin-bottom-md">
         {/* Pricing Card */}
         <div className={`${styles.pricingPlan} ${styles.pricingPlanStarter}`}>
           <header className={styles.planHeader}>
@@ -75,12 +75,10 @@ export function PricingTable(props: PricingTableProps) {
         </div>
       </div>
 
-      {/* Features section */}
-      <div className="container grid grid--4-cols">
-        <div className="feature">Feature 1</div>
-        <div className="feature">Feature 2</div>
-        <div className="feature">Feature 3</div>
-        <div className="feature">Feature 4</div>
+      <div className="container">
+        <aside className={styles.planDetails}>
+          Prices include all applicable taxes. You can cancel at any time.
+        </aside>
       </div>
     </section>
   );

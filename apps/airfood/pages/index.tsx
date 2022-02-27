@@ -8,6 +8,7 @@ import Script from 'next/script';
 import Meals from '../components/meals/meals';
 import Testimonials from '../components/testimonials/testimonials';
 import PricingTable from '../components/pricing-table/pricing-table';
+import Features from '../components/features/features';
 const StyledPage = styled.div`
   .page {
   }
@@ -24,6 +25,7 @@ export function Index() {
       <Meals></Meals>
       <Testimonials></Testimonials>
       <PricingTable></PricingTable>
+      <Features></Features>
     </>
   );
 }
