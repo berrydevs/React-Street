@@ -9,6 +9,7 @@ import Meals from '../components/meals/meals';
 import Testimonials from '../components/testimonials/testimonials';
 import PricingTable from '../components/pricing-table/pricing-table';
 import Features from '../components/features/features';
+import Cta from '../components/cta/cta';
 const StyledPage = styled.div`
   .page {
   }
@@ -26,6 +27,7 @@ export function Index() {
       <Testimonials></Testimonials>
       <PricingTable></PricingTable>
       <Features></Features>
+      <Cta></Cta>
     </>
   );
 }
