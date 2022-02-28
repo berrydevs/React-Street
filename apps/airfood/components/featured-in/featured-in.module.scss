@@ -16,7 +16,14 @@
   display: flex;
   justify-content: space-around;
   height: 3.2rem;
+  div {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
   span {
+    display: block;
+    margin-right: 3.2rem;
     img {
       filter: brightness(0);
       opacity: 0.5;
