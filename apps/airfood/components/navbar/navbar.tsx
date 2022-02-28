@@ -9,20 +9,20 @@ export function Navbar(props: NavbarProps) {
     <nav className={styles.mainNav}>
       <ul className={styles.mainNavList}>
         <li className={styles.mainNavLink}>
-          <a href="#">Section 1</a>
+          <a href="#">How it works</a>
         </li>
         <li className={styles.mainNavLink}>
-          <a href="#">Section 2</a>
+          <a href="#">Meals</a>
         </li>
         <li className={styles.mainNavLink}>
-          <a href="#">Section 3</a>
+          <a href="#">Testimonials</a>
         </li>
         <li className={styles.mainNavLink}>
-          <a href="#">Section 4</a>
+          <a href="#">Pricing</a>
         </li>
         <li className={styles.mainNavLink}>
           <a href="#" className={styles.navCta}>
-            Section 5
+            Try for free
           </a>
         </li>
       </ul>
