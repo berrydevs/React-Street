@@ -7,20 +7,20 @@ export interface FooterProps {}
 export function Footer(props: FooterProps) {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="footer">
-      <div className="container grid grid--5-cols">
-        <div className="logoCol">
+    <footer className={styles.footer}>
+      <div className={`container grid ${styles.footerGrid}`}>
+        <div className={styles.logoCol}>
           <Link href={'#'} passHref>
             <Image
               src={'/static/img/omnifood-logo.png'}
-              className="logo"
+              className={styles.logo}
               alt="Airfood, different people eating healthy food."
               width={150}
-              height={23}
+              height={33}
             />
           </Link>
 
-          <ul className="socialLinks">
+          <ul className={styles.socialLinks}>
             <li>
               <a href="#">
                 <ion-icon name="logo-instagram"></ion-icon>
@@ -38,15 +38,15 @@ export function Footer(props: FooterProps) {
             </li>
           </ul>
 
-          <p className="copyright">
+          <p className={styles.copyright}>
             Copyright &copy; {currentYear} by Omnifood, Inc. All rights
             reserved.
           </p>
         </div>
 
-        <div className="addressCol">
-          <p className="footerHeading">Contact us</p>
-          <address className="contacts">
+        <div className={styles.addressCol}>
+          <p className={styles.footerHeading}>Contact us</p>
+          <address className={styles.contacts}>
             <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
             <p>
               <a href="tel:415-201-6370">415-201-6370</a>
@@ -56,9 +56,9 @@ export function Footer(props: FooterProps) {
           </address>
         </div>
 
-        <div className="navCol">
-          <p className="footerHeading">Account</p>
-          <ul className="footerNav">
+        <div className={styles.navCol}>
+          <p className={styles.footerHeading}>Account</p>
+          <ul className={styles.footerNav}>
             <li>
               <Link href={'#'}>Create account</Link>
             </li>
@@ -73,39 +73,39 @@ export function Footer(props: FooterProps) {
             </li>
           </ul>
         </div>
-      </div>
 
-      <div className="navCol">
-        <p className="footerHeading">Company</p>
-        <ul className="footerNav">
-          <li>
-            <Link href={'#'}> About Omnifood</Link>
-          </li>
-          <li>
-            <Link href={'#'}>For Business</Link>
-          </li>
-          <li>
-            <Link href={'#'}> Cooking partners</Link>
-          </li>
-          <li>
-            <Link href={'#'}>Careers</Link>
-          </li>
-        </ul>
-      </div>
+        <div className={styles.navCol}>
+          <p className={styles.footerHeading}>Company</p>
+          <ul className={styles.footerNav}>
+            <li>
+              <Link href={'#'}> About Omnifood</Link>
+            </li>
+            <li>
+              <Link href={'#'}>For Business</Link>
+            </li>
+            <li>
+              <Link href={'#'}> Cooking partners</Link>
+            </li>
+            <li>
+              <Link href={'#'}>Careers</Link>
+            </li>
+          </ul>
+        </div>
 
-      <div className="navCol">
-        <p className="footerHeading">Resources</p>
-        <ul className="footerNav">
-          <li>
-            <Link href={'#'}>Recipe directory</Link>
-          </li>
-          <li>
-            <Link href={'#'}>Help center</Link>
-          </li>
-          <li>
-            <Link href={'#'}>Privacy & terms</Link>
-          </li>
-        </ul>
+        <div className={styles.navCol}>
+          <p className={styles.footerHeading}>Resources</p>
+          <ul className={styles.footerNav}>
+            <li>
+              <Link href={'#'}>Recipe directory</Link>
+            </li>
+            <li>
+              <Link href={'#'}>Help center</Link>
+            </li>
+            <li>
+              <Link href={'#'}>Privacy & terms</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

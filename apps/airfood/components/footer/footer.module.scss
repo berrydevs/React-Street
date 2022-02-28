@@ -1,0 +1,108 @@
+.footer {
+  padding: 9.8rem 0;
+  background-color: #fdf2e9;
+}
+
+.footerGrid {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footerHeading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.logoCol {
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.footerNav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  a {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: #767676;
+      transition: all 0.4s;
+    }
+
+    &:active,
+    &:hover {
+      color: #555;
+    }
+  }
+}
+
+.socialLinks {
+  margin-top: 3.2rem;
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+
+  ion-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  a {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: #767676;
+      transition: all 0.4s;
+    }
+
+    &:active,
+    &:hover {
+      color: #555;
+    }
+  }
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  // Will automatically align itself to bottom
+  // Because of flexbox on parent element logoCol
+  margin-top: auto;
+}
+
+.addressCol {
+  a {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: #767676;
+      transition: all 0.4s;
+    }
+
+    &:active,
+    &:hover {
+      color: #555;
+    }
+  }
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  p:first-child {
+    margin-bottom: 2.4rem;
+  }
+}

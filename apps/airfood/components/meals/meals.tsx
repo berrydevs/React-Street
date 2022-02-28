@@ -19,7 +19,7 @@ const mealList = [
 export function Meals(props: MealsProps) {
   return (
     <section className={styles.sectionMeals}>
-      <div className="container center-text">
+      <div className={`container center-text margin-bottom-md`}>
         <span className="subheading">Meals</span>
         <h2 className="heading-secondary">
           Omnifood AI chooses from 5,000+ recipes
