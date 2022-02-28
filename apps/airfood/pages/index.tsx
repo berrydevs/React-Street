@@ -10,6 +10,7 @@ import Testimonials from '../components/testimonials/testimonials';
 import PricingTable from '../components/pricing-table/pricing-table';
 import Features from '../components/features/features';
 import Cta from '../components/cta/cta';
+import Footer from '../components/footer/footer';
 const StyledPage = styled.div`
   .page {
   }
@@ -20,14 +21,18 @@ export function Index() {
     <>
       <Script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></Script>
       <Header></Header>
-      <Hero></Hero>
-      <FeaturedIn></FeaturedIn>
-      <HowItWorks></HowItWorks>
-      <Meals></Meals>
-      <Testimonials></Testimonials>
-      <PricingTable></PricingTable>
-      <Features></Features>
-      <Cta></Cta>
+      <main>
+        <Hero></Hero>
+        <FeaturedIn></FeaturedIn>
+        <HowItWorks></HowItWorks>
+        <Meals></Meals>
+        <Testimonials></Testimonials>
+        <PricingTable></PricingTable>
+        <Features></Features>
+        <Cta></Cta>
+      </main>
+
+      <Footer></Footer>
     </>
   );
 }
