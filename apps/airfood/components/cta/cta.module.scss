@@ -11,12 +11,68 @@
 
   overflow: hidden;
 
-  height: 50rem;
+  *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.6rem rgba(253, 242, 233, 0.521);
+  }
+}
+
+.textBox {
+  padding: 6.4rem;
+  padding-top: 4.8rem;
+  color: #45260a;
+
+  .heading-secondary {
+    color: #45260a;
+    margin-bottom: 0;
+  }
+}
+
+.text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
 }
 
 .imageBox {
-  background-image: linear-gradient(to left bottom, rgba(235, 151, 78, 0.308), rgba(230, 125, 34, 0.288)), url("../../public/static/img/eating.jpg");
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(235, 151, 78, 0.308),
+      rgba(230, 125, 34, 0.288)
+    ),
+    url('../../public/static/img/eating.jpg');
 
   background-size: cover;
   background-position: center;
+}
+
+.ctaForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+
+  label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, $alpha: 0.15);
+  }
+
+  input::placeholder {
+    color: #aaa;
+  }
 }

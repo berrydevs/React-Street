@@ -20,8 +20,10 @@ export function Navbar(props: NavbarProps) {
         <li className={styles.mainNavLink}>
           <a href="#">Section 4</a>
         </li>
-        <li className={styles.mainNavLink && styles.navCta}>
-          <a href="#">Section 5</a>
+        <li className={styles.mainNavLink}>
+          <a href="#" className={styles.navCta}>
+            Section 5
+          </a>
         </li>
       </ul>
     </nav>
