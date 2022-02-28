@@ -4,8 +4,13 @@
   align-items: center;
   background-color: #fdf2e9;
 
-
   // Giving height - want to make header sticky
   height: 9.6em;
   padding: 0 3.2rem;
+}
+
+.logo {
+  position: relative;
+  width: 16.6rem;
+  height: 9.6em;
 }

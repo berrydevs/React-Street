@@ -9,15 +9,17 @@ export interface HeaderProps {}
 export function Header(props: HeaderProps) {
   return (
     <header className={styles.header}>
-      <Link href={'#'} passHref>
-        <Image
-          src={'/static/img/omnifood-logo.png'}
-          className="logo"
-          alt="Airfood, different people eating healthy food."
-          width={150}
-          height={23}
-        />
-      </Link>
+      <div className={styles.logo}>
+        <Link href={'#'} passHref>
+          <Image
+            src={'/static/img/omnifood-logo.png'}
+            className="logo"
+            alt="Airfood, different people eating healthy food."
+            layout="fill"
+            objectFit="contain"
+          />
+        </Link>
+      </div>
       <Navbar />
     </header>
   );
