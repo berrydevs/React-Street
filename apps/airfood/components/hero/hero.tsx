@@ -136,7 +136,8 @@ const ImageContainer = styled.div``;
 const ImageStyles = styled(Image)`
   width: 100%;
 `;
-const ButtonStyles = css<{ primary: boolean; marginRightSm: boolean }>`
+// const ButtonStyles = css<{ primary: boolean; marginRightSm: boolean }>`
+const ButtonStyles = css`
   &:link,
   &:visited {
     display: inline-block;
@@ -147,18 +148,6 @@ const ButtonStyles = css<{ primary: boolean; marginRightSm: boolean }>`
     border-radius: 9px;
     transition: all 0.3s;
   }
-
-  /* &:link,
-  &:visited {
-    background-color: ${(p) => (p.primary ? '#e67e22' : '#fff')};
-    color: ${(p) => (p.primary ? '#fff' : '#555')};
-  }
-  &:hover,
-  &:active {
-    background-color: ${(p) => (p.primary ? '#cf711f' : '#fdf2e9')};
-    box-shadow: ${(p) => (p.primary ? '' : 'inset 0 0 0 #fff')};
-  }
-  margin-right: ${(p) => (p.marginRightSm ? '1.6rem' : '0')}; */
 `;
 
 export const PrimaryButton = styled.a`
