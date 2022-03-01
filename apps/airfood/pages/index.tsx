@@ -11,10 +11,23 @@ import PricingTable from '../components/pricing-table/pricing-table';
 import Features from '../components/features/features';
 import Cta from '../components/cta/cta';
 import Footer from '../components/footer/footer';
-const StyledPage = styled.div`
-  .page {
+
+declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
+  namespace JSX {
+    interface IntrinsicElements {
+      'ion-icon': IonIcon;
+    }
   }
-`;
+}
+
+interface IonIcon
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLElement>,
+    HTMLElement
+  > {
+  name: string;
+}
 
 export function Index() {
   return (
