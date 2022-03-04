@@ -1,4 +1,3 @@
-import './header.module.scss';
 import Image from 'next/image';
 import Navbar from '../navbar/navbar';
 import styles from './header.module.scss';

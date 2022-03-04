@@ -21,6 +21,12 @@
     display: block;
     margin-bottom: 3.2rem;
   }
+
+  .imageContainer {
+    position: relative;
+    height: 3rem;
+    width: 15rem;
+  }
 }
 
 .footerNav {
@@ -104,5 +110,19 @@
 
   p:first-child {
     margin-bottom: 2.4rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .ctaForm {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .btn {
+    margin-top: 1.2rem;
   }
 }

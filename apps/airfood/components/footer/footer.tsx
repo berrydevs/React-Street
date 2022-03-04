@@ -10,15 +10,17 @@ export function Footer(props: FooterProps) {
     <footer className={styles.footer}>
       <div className={`container grid ${styles.footerGrid}`}>
         <div className={styles.logoCol}>
-          <Link href={'#'} passHref>
-            <Image
-              src={'/static/img/omnifood-logo.png'}
-              className={styles.logo}
-              alt="Airfood, different people eating healthy food."
-              width={150}
-              height={33}
-            />
-          </Link>
+          <div className={styles.imageContainer}>
+            <Link href={'#'} passHref>
+              <Image
+                src={'/static/img/omnifood-logo.png'}
+                className={styles.logo}
+                alt="Airfood, different people eating healthy food."
+                layout="fill"
+                objectFit="contain"
+              />
+            </Link>
+          </div>
 
           <ul className={styles.socialLinks}>
             <li>

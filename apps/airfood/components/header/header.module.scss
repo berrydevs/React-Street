@@ -6,11 +6,17 @@
 
   // Giving height - want to make header sticky
   height: 9.6em;
-  padding: 0 3.2rem;
+  padding: 0 4.8rem;
 }
 
 .logo {
   position: relative;
   width: 16.6rem;
   height: 9.6em;
+}
+
+@media (max-width: 75em) {
+.header {
+  padding: 0 3.2rem;
+}
 }

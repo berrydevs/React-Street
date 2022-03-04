@@ -76,3 +76,17 @@
     color: #aaa;
   }
 }
+
+@media (max-width: 59em) {
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .ctaForm {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .btn {
+    margin-top: 1.2rem;
+  }
+}

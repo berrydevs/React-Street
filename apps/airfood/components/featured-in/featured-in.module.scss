@@ -31,3 +31,18 @@
     }
   }
 }
+
+@media (max-width: 59em) {
+  .logos {
+    height: 2.4rem;
+    span {
+      display: block;
+      margin-right: 3.2rem;
+      img {
+        filter: brightness(0);
+        opacity: 0.5;
+        height: 2.4rem;
+      }
+    }
+  }
+}

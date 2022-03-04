@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
 import { css } from 'styled-components';
-
+import styles from './hero.module.scss';
 /* eslint-disable-next-line */
 export interface HeroProps {}
 
@@ -101,6 +101,11 @@ const DeliveredMeals = styled.div`
   align-items: center;
   gap: 1.6rem;
   margin-top: 8rem;
+
+  @media (max-width: 59em) {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -116,8 +121,28 @@ const HeroStyle = styled.div`
   margin: 0 auto;
   padding: 0 3.2rem;
   align-items: center;
+
+  /* @media (max-width: 84em) {
+    max-width: 120rem;
+  } */
+
+  @media (max-width: 79em) {
+    gap: 4.8rem;
+  }
+
+  /* 944px tablets */
+  @media (max-width: 59em) {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
 `;
-const TextContainer = styled.div``;
+const TextContainer = styled.div`
+  /* 944px tablets */
+  @media (max-width: 59em) {
+    text-align: center;
+  }
+`;
 const Heading = styled.h1`
   font-size: 5.2rem;
   line-height: 4.9rem;
@@ -125,6 +150,10 @@ const Heading = styled.h1`
   color: #333;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
+
+  @media (max-width: 84em) {
+    font-size: 4.2rem;
+  }
 `;
 const Description = styled.p`
   font-size: 2rem;
@@ -132,10 +161,15 @@ const Description = styled.p`
   margin-bottom: 4.8rem;
 `;
 
-const ImageContainer = styled.div``;
-const ImageStyles = styled(Image)`
+const ImageContainer = styled.div`
   width: 100%;
+
+  @media (max-width: 59em) {
+    width: 60%;
+    margin: 0 auto;
+  }
 `;
+const ImageStyles = styled(Image)``;
 // const ButtonStyles = css<{ primary: boolean; marginRightSm: boolean }>`
 const ButtonStyles = css`
   &:link,

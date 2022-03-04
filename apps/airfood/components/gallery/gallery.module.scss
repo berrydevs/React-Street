@@ -5,6 +5,7 @@
   height: 100%;
   padding: 1.6rem;
 }
+
 .galleryItem {
   position: relative;
   overflow: hidden;
@@ -16,5 +17,16 @@
   }
   img:hover {
     transform: scale(1.1);
+  }
+}
+@media (max-width: 84em) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 59em) {
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
   }
 }

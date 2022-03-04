@@ -67,10 +67,17 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .mealIcon {
   height: 2.4rem;
   width: 2.4rem;
   color: #e67322;
+}
+
+@media (max-width: 59em) {
+  .mealContent {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
 }

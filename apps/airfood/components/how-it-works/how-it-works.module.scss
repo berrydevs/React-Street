@@ -57,3 +57,9 @@
 .step-img {
   width: 50%;
 }
+
+@media (max-width: 59em) {
+  .stepNumber {
+    font-size: 7.4rem;
+  }
+}

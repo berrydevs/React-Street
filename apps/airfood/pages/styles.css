@@ -98,6 +98,7 @@ grid:not(:last-child) {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
+  letter-spacing: -0.1rem;
 }
 
 .center-text {
@@ -149,4 +150,34 @@ grid:not(:last-child) {
   cursor: pointer;
 
   transition: all 0.4s;
+}
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16 = 0.5265 */
+    font-size: 52.65%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+}
+
+/* 944px tablets */
+@media (max-width: 59em) {
+  html {
+    /* 9px / 16 = 0.5265 */
+    font-size: 50%;
+  }
+
+
 }

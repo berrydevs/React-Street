@@ -9,7 +9,9 @@ export function Cta(props: CtaProps) {
       <div className={`container `}>
         <div className={styles.cta}>
           <div className={styles.textBox}>
-            <h2 className="heading-secondary .margin-bottom-md">Get your first meal for free!</h2>
+            <h2 className="heading-secondary .margin-bottom-md">
+              Get your first meal for free!
+            </h2>
             <p className={styles.text}>
               Healthy, tasty and hassle-free meals are waiting for you. Start
               eating well today. You can cancel or pause anytime. And the first
@@ -32,7 +34,7 @@ export function Cta(props: CtaProps) {
                 <input
                   type="email"
                   id="email"
-                  placeholder="jane@myshacode.come"
+                  placeholder="jane@myshacode.com"
                   required
                 />
               </div>
@@ -49,7 +51,9 @@ export function Cta(props: CtaProps) {
                 </select>
               </div>
 
-              <button className='btn btn--form'>Sign up now</button>
+              <button className={`${styles.btn} btn btn--form`}>
+                Sign up now
+              </button>
             </form>
           </div>
           <div
