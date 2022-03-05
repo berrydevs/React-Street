@@ -23,6 +23,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 body strong {
@@ -178,6 +179,25 @@ grid:not(:last-child) {
     /* 9px / 16 = 0.5265 */
     font-size: 50%;
   }
+}
 
+/* Below 704px Smaller tablets */
+@media (max-width: 44em) {
+  html {
+    /* 9px / 16 = 0.5265 */
+    font-size: 50%;
+  }
 
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Below 550px Phones */
+@media (max-width: 34em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

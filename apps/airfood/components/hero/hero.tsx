@@ -128,6 +128,10 @@ const DeliveredMeals = styled.div`
 const Wrapper = styled.div`
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
+
+  @media (max-width: 36em) {
+    padding: 2.4rem 0 6.4rem 0;
+  }
 `;
 
 const HeroStyle = styled.div`
@@ -152,7 +156,7 @@ const HeroStyle = styled.div`
 
   /* 570px Mobiles */
   @media (max-width: 36em) {
-    padding: 0 1rem;
+    padding: 0 3.2rem;
   }
 `;
 const TextContainer = styled.div`
@@ -186,6 +190,10 @@ const ImageContainer = styled.div`
     width: 60%;
     margin: 0 auto;
   }
+
+  @media (max-width: 36em) {
+    width: 80%;
+  }
 `;
 const ImageStyles = styled(Image)``;
 // const ButtonStyles = css<{ primary: boolean; marginRightSm: boolean }>`
@@ -199,6 +207,10 @@ const ButtonStyles = css`
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
     transition: all 0.3s;
+  }
+
+  @media (max-width: 36em) {
+    padding: 2.4rem 1.6rem;
   }
 `;
 

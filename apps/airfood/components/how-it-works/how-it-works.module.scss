@@ -63,3 +63,29 @@
     font-size: 7.4rem;
   }
 }
+
+@media (max-width: 44em) {
+  .sectionHow {
+    padding: 6.4rem 0;
+  }
+}
+
+@media (max-width: 34em) {
+  .stepImgBox:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .stepImgBox:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .stepImgBox {
+    img {
+      width: 60%;
+    }
+  }
+
+  .stepImgBox {
+    transform: translateY(3.2rem);
+  }
+}

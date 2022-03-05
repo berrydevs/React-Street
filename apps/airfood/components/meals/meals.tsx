@@ -46,7 +46,7 @@ export function Meals(props: MealsProps) {
           totalReviews={441}
         />
 
-        <div className="diets">
+        <div className={styles.diets}>
           <h3 className="heading-tertiary">Works with any diet</h3>
           <List list={mealList} />
         </div>

@@ -3,6 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   height: 100%;
+  width: 100%;
   padding: 1.6rem;
 }
 
@@ -28,5 +29,12 @@
 @media (max-width: 59em) {
   .gallery {
     grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 34em) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
   }
 }

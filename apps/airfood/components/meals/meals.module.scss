@@ -7,3 +7,16 @@
   text-align: center;
   font-size: 1.8rem;
 }
+
+@media (max-width: 44em) {
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 44em) {
+  .sectionMeals {
+    padding: 6.4rem 0;
+  }
+}

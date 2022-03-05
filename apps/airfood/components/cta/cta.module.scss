@@ -90,3 +90,22 @@
     margin-top: 1.2rem;
   }
 }
+
+@media (max-width: 34em) {
+  .cta {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .imageBox {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .textBox {
+    padding: 3.2rem;
+  }
+
+  .text {
+    margin-bottom: 2.4rem;
+  }
+}

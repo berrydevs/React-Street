@@ -24,6 +24,16 @@
 
 @media (max-width: 59em) {
   .sectionTestimonials {
+    grid-template-columns: 2fr;
+  }
+}
+
+@media (max-width: 34em) {
+  .testimonials {
     grid-template-columns: 1fr;
+  }
+
+  .testimonialContainer {
+    padding: 6.4rem 3.6rem;
   }
 }

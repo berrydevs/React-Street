@@ -113,16 +113,29 @@
   }
 }
 
-@media (max-width: 59em) {
-  .cta {
-    grid-template-columns: 3fr 2fr;
+@media (max-width: 44em) {
+  .footer {
+    padding: 9.8rem 0 4.8rem 0;
+  }
+  .footerGrid {
+    grid-template-columns: repeat(6, 1fr);
   }
 
-  .ctaForm {
-    grid-template-columns: repeat(1, 1fr);
+  .logoCol,
+  .addressCol {
+    grid-column: span 3;
   }
 
-  .btn {
-    margin-top: 1.2rem;
+  .navCol {
+    grid-column: span 2;
+    grid-row: 1;
+    margin-bottom: 3.2rem;
+  }
+}
+
+
+@media (max-width: 34em) {
+  .footer {
+    padding: 4.8rem 0 4.8rem 0;
   }
 }

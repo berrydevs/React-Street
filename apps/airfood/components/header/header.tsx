@@ -19,6 +19,7 @@ export function Header(props: HeaderProps) {
           />
         </Link>
       </div>
+
       <Navbar />
     </header>
   );
