@@ -13,13 +13,14 @@ const StyledHero = styled.div`
 export function Hero(props: HeroProps) {
   const images = [1, 2, 3, 4, 5].map((name, index) => {
     return (
-      <Image
-        key={index}
-        alt="Customer Photo"
-        src={`/static/img/customers/customer-${name}.jpg`}
-        width={38}
-        height={38}
-      />
+      <div key={index}>
+        <Image
+          alt="Customer Photo"
+          src={`/static/img/customers/customer-${name}.jpg`}
+          layout="fill"
+          objectFit="contain"
+        />
+      </div>
     );
   });
 
@@ -82,13 +83,22 @@ const DeliveredText = styled.div`
   }
 `;
 
+const DeliverImageContainer = styled.div``;
+
 const DeliveredMealsImages = styled.div`
-  img {
+  display: flex;
+  div {
+    position: relative;
     height: 4.8rem;
     width: 4.8rem;
-    border: 3px solid #fdf239;
-    border-radius: 50%;
     margin-right: -1.6rem;
+    border-radius: 50%;
+    border: 3px solid #f0eca8f8;
+
+    img {
+      border-radius: 50%;
+      margin-right: -1.6rem;
+    }
 
     &:last-child {
       margin: 0;
@@ -98,13 +108,20 @@ const DeliveredMealsImages = styled.div`
 
 const DeliveredMeals = styled.div`
   display: flex;
+  justify-content: space-around;
   align-items: center;
   gap: 1.6rem;
   margin-top: 8rem;
+  height: 3.2rem;
+  position: relative;
 
-  @media (max-width: 59em) {
+  @media (max-width: 62em) {
     justify-content: center;
     margin-top: 3.2rem;
+  }
+
+  @media (max-width: 63em) {
+    gap: 1.6rem;
   }
 `;
 
@@ -122,24 +139,25 @@ const HeroStyle = styled.div`
   padding: 0 3.2rem;
   align-items: center;
 
-  /* @media (max-width: 84em) {
-    max-width: 120rem;
-  } */
-
   @media (max-width: 79em) {
     gap: 4.8rem;
   }
 
   /* 944px tablets */
-  @media (max-width: 59em) {
+  @media (max-width: 62em) {
     grid-template-columns: 1fr;
     padding: 0 8rem;
     gap: 6.4rem;
   }
+
+  /* 570px Mobiles */
+  @media (max-width: 36em) {
+    padding: 0 1rem;
+  }
 `;
 const TextContainer = styled.div`
   /* 944px tablets */
-  @media (max-width: 59em) {
+  @media (max-width: 62em) {
     text-align: center;
   }
 `;
@@ -164,7 +182,7 @@ const Description = styled.p`
 const ImageContainer = styled.div`
   width: 100%;
 
-  @media (max-width: 59em) {
+  @media (max-width: 62em) {
     width: 60%;
     margin: 0 auto;
   }
