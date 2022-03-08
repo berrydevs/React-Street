@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Roboto+Slab:wght@400;700;800&display=swap');
+
+  @font-face {
+    font-family: 'Mirage';
+    font-weight: 800;
+    src: local(''), url('/fonts/Mirage/Mirage-black.otf') format('otf');
+  }
+
+  @font-face {
+    font-family: 'BrittanySignature';
+    font-weight: 800;
+    src: local(''), url('/fonts/BS/BrittanySignature.ttf') format('ttf');
+  }
+}
+
+label {
+  @apply block uppercase text-xs;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  @apply bg-gray-200 font-serif h-12 w-full mb-4;
+}
+
+input[type='checkbox'] {
+  @apply hidden px-5;
+}
+
+input[type='checkbox'] + label {
+  @apply bg-checkbox-unchecked bg-no-repeat pl-5 w-full h-16;
+}
+
+input[type='checkbox']:checked + label {
+  @apply bg-checkbox-checked bg-no-repeat pl-5;
+}

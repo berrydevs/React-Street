@@ -4,6 +4,8 @@
     "air-clothing": "apps/air-clothing",
     "air-clothing-e2e": "apps/air-clothing-e2e",
     "airfood": "apps/airfood",
-    "airfood-e2e": "apps/airfood-e2e"
+    "airfood-e2e": "apps/airfood-e2e",
+    "applin": "apps/applin",
+    "applin-e2e": "apps/applin-e2e"
   }
 }
