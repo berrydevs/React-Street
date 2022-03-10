@@ -18,7 +18,7 @@ export function Cta(props: CtaProps) {
               meal is on us!
             </p>
 
-            <form action="#" className={styles.ctaForm}>
+            <form name="meal-sign-up" className={styles.ctaForm} netlify>
               <div>
                 <label htmlFor="full-name">Full Name</label>
                 <input
@@ -26,6 +26,7 @@ export function Cta(props: CtaProps) {
                   id="full-name"
                   placeholder="Jane Mice"
                   required
+                  name="full-name"
                 />
               </div>
 
@@ -36,6 +37,7 @@ export function Cta(props: CtaProps) {
                   id="email"
                   placeholder="jane@myshacode.com"
                   required
+                  name="email"
                 />
               </div>
 
@@ -43,7 +45,7 @@ export function Cta(props: CtaProps) {
                 <label htmlFor="select-where">
                   Where did you hear from us?
                 </label>
-                <select name="" id="select-where" required>
+                <select id="select-where" required name="select-where">
                   <option value="">Please choose one option</option>
                   <option value="Friends">Friends or Family</option>
                   <option value="Internet">Internet</option>
