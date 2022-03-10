@@ -84,8 +84,8 @@ export function Navbar(props: NavbarProps) {
                 setisMobileMenu(!isMobileMenu);
               }}
             >
-              {/* <a className={styles.navCta}>Try for free</a> */}
-              Try for free
+              <a className={styles.navCta}>Try for free</a>
+              {/* Try for free */}
             </Link>
           </li>
         </ul>

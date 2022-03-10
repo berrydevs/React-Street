@@ -6,10 +6,11 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to airfood!</title>
+        <title>Airfood &mdash; Never cook again</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
+          name="description"
+          content="The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs."
         />
       </Head>
       <main className="app">

@@ -32,25 +32,26 @@ export function Header(props: HeaderProps) {
   // }, [inView, entry]);
 
   return (
-      <header
-        className={`${isNavbarSticky ? `${styles.sticky}` : ''}  ${
-          styles.header
-        }`}
-        ref={ref}
-      >
-        <div className={styles.logo}>
-          <Link href={'#'} passHref>
-            <Image
-              src={'/static/img/omnifood-logo.png'}
-              className="logo"
-              alt="Airfood, different people eating healthy food."
-              layout="fill"
-              objectFit="contain"
-            />
-          </Link>
-        </div>
-        <Navbar />
-      </header>
+    // <header
+    //   className={`${isNavbarSticky ? `${styles.sticky}` : ''}  ${
+    //     styles.header
+    //   }`}
+    //   ref={ref}
+    // >
+    <header className={`  ${styles.header}`}>
+      <div className={styles.logo}>
+        <Link href={'#'} passHref>
+          <Image
+            src={'/static/img/omnifood-logo.png'}
+            className="logo"
+            alt="Airfood, different people eating healthy food."
+            layout="fill"
+            objectFit="contain"
+          />
+        </Link>
+      </div>
+      <Navbar />
+    </header>
   );
 }
 

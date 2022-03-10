@@ -2,6 +2,7 @@
 import { ReactElement } from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import Script from 'next/script';
 
 export default class CustomDocument extends Document<{
   styleTags: ReactElement[];
@@ -29,11 +30,12 @@ export default class CustomDocument extends Document<{
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" href="/static/img/favicon.png" />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+          <Script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></Script>
         </body>
       </Html>
     );
