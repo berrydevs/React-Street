@@ -57,7 +57,7 @@ export function Cta(props: CtaProps) {
                 </select>
               </div>
 
-              <button className={`${styles.btn} btn btn--form`}>
+              <button className={`${styles.btn} btn btn--form`} type="submit">
                 Sign up now
               </button>
             </form>
