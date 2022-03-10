@@ -38,7 +38,8 @@ export function Header(props: HeaderProps) {
     //   }`}
     //   ref={ref}
     // >
-    <header className={`  ${styles.header}`}>
+    // <header className={`  ${styles.header}`}>
+    <header className={`${styles.sticky}   ${styles.header}`}>
       <div className={styles.logo}>
         <Link href={'#'} passHref>
           <Image
