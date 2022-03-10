@@ -195,6 +195,10 @@ grid:not(:last-child) {
   .grid--3-cols {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .grid {
+    row-gap: 3.2rem;
+  }
 }
 
 /* Below 550px Phones */
@@ -203,5 +207,9 @@ grid:not(:last-child) {
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid {
+    row-gap: 3.2rem;
   }
 }

@@ -34,8 +34,8 @@ export function HowItWorks(props: HowItWorksProps) {
             src={'/static/img/app/app-screen-1.png'}
             className="logo"
             alt="iPhone app preferences selection screen"
-            width={250}
-            height={523}
+            layout="fill"
+            objectFit="contain"
           />
         </div>
 
@@ -45,8 +45,8 @@ export function HowItWorks(props: HowItWorksProps) {
             src={'/static/img/app/app-screen-2.png'}
             className="logo"
             alt="iPhone app meal approving plan screen"
-            width={250}
-            height={523}
+            layout="fill"
+            objectFit="contain"
           />
         </div>
 
@@ -78,8 +78,8 @@ export function HowItWorks(props: HowItWorksProps) {
             src={'/static/img/app/app-screen-3.png'}
             className="logo"
             alt="iPhone app delivery screen"
-            width={250}
-            height={523}
+            layout="fill"
+            objectFit="contain"
           />
         </div>
       </div>

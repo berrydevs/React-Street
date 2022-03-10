@@ -117,12 +117,14 @@ const DeliveredMeals = styled.div`
 
   @media (max-width: 62em) {
     justify-content: center;
-    margin-top: 3.2rem;
+    margin-top: 3.4rem;
   }
 
   @media (max-width: 63em) {
     gap: 1.6rem;
   }
+
+
 `;
 
 const Wrapper = styled.div`
@@ -181,18 +183,21 @@ const Description = styled.p`
   font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 4.8rem;
+
+  @media (max-width: 84em) {
+    margin-bottom: 3.8rem;
+  }
 `;
 
 const ImageContainer = styled.div`
   width: 100%;
 
   @media (max-width: 62em) {
-    width: 60%;
     margin: 0 auto;
   }
 
   @media (max-width: 36em) {
-    width: 80%;
+    width: 90%;
   }
 `;
 const ImageStyles = styled(Image)``;

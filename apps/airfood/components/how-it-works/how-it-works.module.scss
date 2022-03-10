@@ -19,6 +19,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 45rem;
+  span > img {
+    transform: scale(1);
+  }
 
   &::before,
   &::after {
@@ -58,6 +63,11 @@
   width: 50%;
 }
 
+@media (max-width: 84em) {
+  .stepImgBox {
+  }
+}
+
 @media (max-width: 59em) {
   .stepNumber {
     font-size: 7.4rem;
@@ -67,6 +77,15 @@
 @media (max-width: 44em) {
   .sectionHow {
     padding: 6.4rem 0;
+  }
+
+  .stepImgBox {
+    height: 45rem;
+    span > img {
+      transform: scale(0.7);
+    }
+
+    transform: translateY(3.4rem);
   }
 }
 
@@ -80,12 +99,19 @@
   }
 
   .stepImgBox {
-    img {
-      width: 60%;
+    height: 45rem;
+    span > img {
+      transform: scale(0.7);
     }
-  }
 
-  .stepImgBox {
-    transform: translateY(3.2rem);
+    transform: translateY(3.4rem);
+
+    &::before {
+      width: 45%;
+    }
+
+    &::after {
+      width: 40%;
+    }
   }
 }
