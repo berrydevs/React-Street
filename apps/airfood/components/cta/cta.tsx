@@ -5,7 +5,7 @@ export interface CtaProps {}
 
 export function Cta(props: CtaProps) {
   return (
-    <div className={styles.sectionCta}>
+    <div className={styles.sectionCta} id="cta">
       <div className={`container `}>
         <div className={styles.cta}>
           <div className={styles.textBox}>

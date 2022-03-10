@@ -37,11 +37,11 @@ export function Hero(props: HeroProps) {
             needs. We have delivered 250,000+ meals last year!
           </Description>
 
-          <Link href="/" passHref>
+          <Link href="#cta" passHref>
             <PrimaryButton>Lets Eat Well!</PrimaryButton>
           </Link>
 
-          <Link href="/" passHref>
+          <Link href="#how" passHref>
             <OutlineButton>Learn more</OutlineButton>
           </Link>
           {/* <Link href="/" passHref>

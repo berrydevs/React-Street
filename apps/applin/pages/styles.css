@@ -22,6 +22,10 @@ label {
   @apply block uppercase text-xs;
 }
 
+p {
+  @apply font-serif mb-8;
+}
+
 input[type='text'],
 input[type='email'],
 input[type='password'] {
@@ -33,9 +37,21 @@ input[type='checkbox'] {
 }
 
 input[type='checkbox'] + label {
-  @apply bg-checkbox-unchecked bg-no-repeat pl-5 w-full h-16;
+  @apply flex justify-center items-center  bg-checkbox-unchecked bg-no-repeat pl-5 w-full h-16;
 }
 
 input[type='checkbox']:checked + label {
   @apply bg-checkbox-checked bg-no-repeat pl-5;
+}
+
+.content {
+  @apply p-8;
+}
+
+.card {
+  @apply bg-white shadow-lg p-6 rounded-md;
+}
+
+.page-title {
+  @apply font-display text-5xl md:text-6xl lg:text-7xl mb-4;
 }

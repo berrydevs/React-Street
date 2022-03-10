@@ -1,10 +1,10 @@
-import Homepage from "../components/homepage/homepage"
+import HomePage from "../pages/homepage/homepage.component"
 
 export function App() {
   return (
     <>
-    <Homepage></Homepage>
+      <HomePage></HomePage>
     </>
-  );
+  )
 }
-export default App;
+export default App

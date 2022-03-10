@@ -30,6 +30,10 @@ body strong {
   font-weight: 500;
 }
 
+body a {
+  cursor: pointer;
+}
+
 .grid {
   display: grid;
   column-gap: 6.3rem;

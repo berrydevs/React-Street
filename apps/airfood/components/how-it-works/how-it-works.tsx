@@ -5,7 +5,7 @@ export interface HowItWorksProps {}
 
 export function HowItWorks(props: HowItWorksProps) {
   return (
-    <section className={styles.sectionHow}>
+    <section className={styles.sectionHow} id="how">
       <div className="container">
         <span className="subheading">How it works</span>
         <h2 className="heading-secondary">

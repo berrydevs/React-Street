@@ -33,6 +33,10 @@
   &:active {
     background-color: #cf711f;
   }
+
+  .activeLink {
+     background-color: #cf711f;
+  }
 }
 
 .btnMobileNav {
@@ -95,6 +99,7 @@
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
+    z-index: 1;
   }
 
   .navOpen .iconMobileNav {
@@ -116,9 +121,25 @@
 
   .mainNavLink {
     font-size: 3rem;
+    cursor: pointer;
   }
 
   .btnMobileNav {
     display: block;
+    position: absolute;
+    z-index: 2;
+    top: 28%;
+    left: 92%;
+  }
+}
+
+// Mobiles
+@media (max-width: 34em) {
+  .btnMobileNav {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 87%;
   }
 }

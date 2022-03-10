@@ -7,7 +7,7 @@ export interface TestimonialsProps {}
 
 export function Testimonials(props: TestimonialsProps) {
   return (
-    <section className={`${styles.sectionTestimonials}`}>
+    <section className={`${styles.sectionTestimonials}`} id="testimonials">
       <div className={styles.testimonialContainer}>
         <span className="subheading">Meals</span>
         <h2 className="heading-secondary">

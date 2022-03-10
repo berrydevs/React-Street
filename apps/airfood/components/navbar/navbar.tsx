@@ -1,46 +1,113 @@
 import './navbar.module.scss';
-import Link from 'next/link';
+// import Link from 'next/link';
 import styles from './navbar.module.scss';
+import { Link, animateScroll as scroll } from 'react-scroll';
+
+import { useState } from 'react';
 /* eslint-disable-next-line */
 export interface NavbarProps {
   // navOpen: string;
 }
 
 export function Navbar(props: NavbarProps) {
+  const [isMobileMenu, setisMobileMenu] = useState(false);
+  console.log(
+    '🚀 ~ file: navbar.tsx ~ line 14 ~ Navbar ~ isMobileMenu',
+    isMobileMenu
+  );
   // const { navOpen } = props;
   return (
-    // <div className={styles.navOpen}>
-    <div className="">
+    <div className={isMobileMenu ? styles.navOpen : ''}>
+      {/* <div className=""> */}
       <nav className={`${styles.mainNav} `}>
         <ul className={styles.mainNavList}>
           <li className={styles.mainNavLink}>
-            <a href="#">How it works</a>
+            <Link
+              to="how"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onClick={() => {
+                setisMobileMenu(!isMobileMenu);
+              }}
+            >
+              How it works
+            </Link>
           </li>
           <li className={styles.mainNavLink}>
-            <a href="#">Meals</a>
+            <Link
+              to="meals"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onClick={() => {
+                setisMobileMenu(!isMobileMenu);
+              }}
+            >
+              Meals
+            </Link>
           </li>
           <li className={styles.mainNavLink}>
-            <a href="#">Testimonials</a>
+            <Link
+              to="testimonials"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onClick={() => {
+                setisMobileMenu(!isMobileMenu);
+              }}
+            >
+              Testimonials
+            </Link>
           </li>
           <li className={styles.mainNavLink}>
-            <a href="#">Pricing</a>
+            <Link
+              to="pricing"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onClick={() => {
+                setisMobileMenu(!isMobileMenu);
+              }}
+            >
+              Pricing
+            </Link>
           </li>
           <li className={styles.mainNavLink}>
-            <a href="#" className={styles.navCta}>
-              Try for free
-            </a>
+            <Link
+              to="cta"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onClick={() => {
+                setisMobileMenu(!isMobileMenu);
+              }}
+            >
+              <a className={styles.navCta}>Try for free</a>
+            </Link>
           </li>
+          k
         </ul>
       </nav>
 
-      <div className={styles.btnMobileNav}>
+      <button
+        className={styles.btnMobileNav}
+        onClick={() => {
+          setisMobileMenu(!isMobileMenu);
+        }}
+      >
         <span className={styles.iconMobileNav}>
           <ion-icon name="menu-outline"></ion-icon>
         </span>
         <span className={styles.iconMobileNav}>
           <ion-icon name="close-outline"></ion-icon>
         </span>
-      </div>
+      </button>
     </div>
   );
 }

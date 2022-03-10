@@ -1,6 +1,7 @@
 {
   "conventionalCommits.scopes": [
     "Airfood",
-    "Airclothing"
+    "Airclothing",
+    "Applin"
   ]
 }

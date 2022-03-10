@@ -23,7 +23,7 @@ export function PricingTable(props: PricingTableProps) {
   };
 
   return (
-    <section className={styles.pricing}>
+    <section className={styles.pricing} id="pricing">
       <div className="container ">
         <span className="subheading">Pricing</span>
         <h2 className="heading-secondary margin-bottom-md">
