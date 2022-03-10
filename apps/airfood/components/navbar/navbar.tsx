@@ -11,10 +11,6 @@ export interface NavbarProps {
 
 export function Navbar(props: NavbarProps) {
   const [isMobileMenu, setisMobileMenu] = useState(false);
-  console.log(
-    '🚀 ~ file: navbar.tsx ~ line 14 ~ Navbar ~ isMobileMenu',
-    isMobileMenu
-  );
   // const { navOpen } = props;
   return (
     <div className={isMobileMenu ? styles.navOpen : ''}>
@@ -88,10 +84,10 @@ export function Navbar(props: NavbarProps) {
                 setisMobileMenu(!isMobileMenu);
               }}
             >
-              <a className={styles.navCta}>Try for free</a>
+              {/* <a className={styles.navCta}>Try for free</a> */}
+              Try for free
             </Link>
           </li>
-          k
         </ul>
       </nav>
 

@@ -15,6 +15,20 @@
   width: 16.6rem;
   height: 9.6em;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.993);
+  box-shadow: 0 1.2rem 3.2rem rgba($color: #000000, $alpha: 0.03);
+}
+
 @media (max-width: 75em) {
   .header {
     padding: 0 3.2rem;
