@@ -18,7 +18,11 @@ export function Cta(props: CtaProps) {
               meal is on us!
             </p>
 
-            <form name="meal-sign-up" className={styles.ctaForm} netlify>
+            <form
+              name="meal-sign-up"
+              className={styles.ctaForm}
+              data-netlify="true"
+            >
               <div>
                 <label htmlFor="full-name">Full Name</label>
                 <input
