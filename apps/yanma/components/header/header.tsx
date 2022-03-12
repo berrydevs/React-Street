@@ -1,3 +1,4 @@
+import Logo from '@components/logo/logo';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
@@ -5,10 +6,11 @@ import styled from '@emotion/styled';
 export interface HeaderProps {}
 
 const containerStyle = css`
-  min-height: 100vh;
+  min-height: 60vh;
   padding: 1rem 0;
   display: grid;
   place-items: center;
+  background-color: var(--background-accent);
 `;
 
 const titleStyle = css`
@@ -19,7 +21,7 @@ const titleStyle = css`
 export function Header(props: HeaderProps) {
   return (
     <header css={containerStyle}>
-      <h1 css={titleStyle}>Welcome to Header!</h1>
+      <Logo />
     </header>
   );
 }

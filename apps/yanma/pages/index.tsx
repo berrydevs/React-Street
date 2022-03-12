@@ -1,18 +1,10 @@
-import styled from '@emotion/styled';
 import Header from '@components/header/header';
-
-const StyledPage = styled.div`
-  .page {
-  }
-`;
+import Nav from '@components/nav/nav';
+import Page from '@layouts/page';
+import { metaData } from 'config';
 
 export function Index() {
-  return (
-    <>
-      <h1>Hello</h1>
-      <Header></Header>
-    </>
-  );
+  return <Page />;
 }
 
 export default Index;

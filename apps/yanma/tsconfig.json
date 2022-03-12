@@ -6,8 +6,11 @@
       "@components/*": [
         "components/*"
       ],
+      "@layouts/*": [
+        "layouts/*"
+      ],
       "@shared/*": [
-        "shared/"
+        "shared/*"
       ]
     },
     "jsx": "preserve",
