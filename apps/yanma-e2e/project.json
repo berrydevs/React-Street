@@ -1,0 +1,28 @@
+{
+  "root": "apps/yanma-e2e",
+  "sourceRoot": "apps/yanma-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/yanma-e2e/cypress.json",
+        "devServerTarget": "yanma:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "yanma:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/yanma-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["yanma"]
+}

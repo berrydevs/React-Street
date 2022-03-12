@@ -6,6 +6,8 @@
     "airfood": "apps/airfood",
     "airfood-e2e": "apps/airfood-e2e",
     "applin": "apps/applin",
-    "applin-e2e": "apps/applin-e2e"
+    "applin-e2e": "apps/applin-e2e",
+    "yanma": "apps/yanma",
+    "yanma-e2e": "apps/yanma-e2e"
   }
 }
