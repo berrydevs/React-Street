@@ -20,6 +20,12 @@ module.exports = {
       colors: {
         primary: "#E9C376", secondary: "#DFB8AC"
       },
+      height: {
+        '18': '4.5rem'
+      },
+      width: {
+        '18': '4.5rem'
+      },
     },
     fontFamily: {
       display: ['Mirage'],

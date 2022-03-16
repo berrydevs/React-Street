@@ -55,3 +55,15 @@ input[type='checkbox']:checked + label {
 .page-title {
   @apply font-display text-5xl md:text-6xl lg:text-7xl mb-4;
 }
+
+.answer {
+  @apply h-18 w-18 rounded-full border-4 border-black justify-center items-center uppercase leading-snug text-sm;
+}
+
+.button {
+  @apply bg-primary font-handwriting block h-12;
+}
+
+.button-text {
+  @apply text-6xl relative -top-2;
+}

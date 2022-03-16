@@ -45,9 +45,9 @@ export function Index() {
           <button
             type="submit"
             role={'submit'}
-            className="z-50 block absolute h-12 w-44 -bottom-12 left-1/2 md:left-auto md:right-0 transform -translate-x-1/2 md:translate-x-0 bg-primary font-handwriting"
+            className="button z-50  absolute  w-44 -bottom-12 left-1/2 md:left-auto md:right-0 transform -translate-x-1/2 md:translate-x-0 "
           >
-            Submit
+            <span className="button-text">Submit</span>
           </button>
         </form>
       </div>
