@@ -7,6 +7,7 @@ import './index.module.scss';
 export interface DirectionProps {}
 
 export function Direction(props: DirectionProps) {
+  const test = '1'
   return (
     <Page>
       <div className="box">
@@ -26,5 +27,6 @@ export function Direction(props: DirectionProps) {
     </Page>
   );
 }
+console.log("🚀 ~ file: index.tsx ~ line 31 ~ Direction ~ test", test)
 
 export default Direction;

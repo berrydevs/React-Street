@@ -12,6 +12,7 @@ module.exports = {
         'page': "url('/img/bg.jpg')",
         'checkbox-checked': "url('/img/checkbox-checked.svg')",
         'checkbox-unchecked': "url('/img/checkbox-unchecked.svg')",
+        'number-sign': "url('/img/number-sign.svg')",
       },
 
       borderWidth: {
@@ -19,6 +20,9 @@ module.exports = {
       },
       colors: {
         primary: "#E9C376", secondary: "#DFB8AC"
+      },
+      fontSize: {
+        '10xl': '10rem'
       },
       height: {
         '18': '4.5rem'
